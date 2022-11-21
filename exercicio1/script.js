@@ -1,25 +1,41 @@
-// declarando uma variavel nome sem valor
-const Nome = "Luiz" 
-// declarando uma variavel idade sem valor
-let Idade = 24
-// imprimir o nome e idade 
-console.log ("Me chamo " + Nome , "Tenho " + Idade)
-// imprimir o tipo da variavel
-/* na variavel nome foi impresso string por que 
-são caracteres dentro de aspas */
-console.log ("Valor:" + Nome + " - Tipo: " + typeof(Nome))
-/*na variavel idade foi impresso number porque são numeros
-e estão sem as aspas o que os transfoma em um tipo number */
-console.log ("Valor:" + Idade + " - Tipo: " + typeof(Idade))
-/*criei uma variavel seuNome junto com o prompt que 
-pergunta "qual seu nome " */
-const seuNome=prompt ("qual seu nome?")
-/* criei uma variavel suaIdade junto com o prompt que pergunta 
-"qual a sua idade */
-let suaIdade=prompt ("qual a sua idade?")
-/*criei um console.log para me mostrar o resultado 
-que foi digitado na variaele tanto do seuNome quanto no suaIdade */
-console.log ("Me chamo " + seuNome , "e tenho " + suaIdade + " anos")
+                        //execicio 1
 
-console.log (" Valor:" + seuNome +" - Tipo:" + typeof(seuNome))
-console.log (" Valor:" + suaIdade +" - Tipo:" + typeof(suaIdade))
+
+let nome ;
+let idade ;
+
+console.log (typeof(nome));
+console.log(typeof(idade));
+//deu undefined pois o valor das variaveis não foram especificados
+
+nome = prompt ("Qual é seu nome?");
+idade = Number( prompt("Qua é a sua idade?"));
+
+console.log (typeof(nome));
+console.log(typeof(idade));
+
+
+console.log ("nome ",nome);
+console.log("idade ",idade);
+console.log ("Olá "+ nome + " você tem " + idade + " anos");
+alert ("Olá "+ nome + " você tem " + idade + " anos");
+
+
+                      // exercicio 2
+
+
+const perguntaA = "Qual o nome do seu pai ? ";
+const respostaA = prompt(perguntaA);
+
+const perguntaB = "Qual onome da sua mãe ?";
+const respostaB = prompt(perguntaB);
+
+const perguntaC = "Você em irmãos ?";
+const respostaC = prompt(perguntaC);
+
+console.log (perguntaA , "-" , respostaA);
+console.log (perguntaB , "-" , respostaB);
+console.log (perguntaC , "-" , respostaC);
+
+
+
